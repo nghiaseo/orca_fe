@@ -1,0 +1,55 @@
+.languageButton {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vi {
+    background-image: url('/images/vn.svg');
+}
+
+.en {
+    background-image: url('/images/uk.svg');
+}
+
+.languageSelector {
+    position: relative;
+}
+
+.languageList {
+    position: absolute;
+    gap: 10px;
+    justify-content: start;
+    flex-direction: column;
+    top: calc(100%);
+    left: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: default;
+}
+
+.languageItem {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 10px;
+    white-space: pre;
+}
+@media screen and (max-width: 1440px) {
+    .languageList{
+        left: unset;
+        right: 0;
+    }            
+}

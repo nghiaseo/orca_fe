@@ -1,0 +1,32 @@
+{
+  "home":{
+    "course":"Courses",
+    "test_input":"Test Input",
+    "news":"News",
+    "about":"About Us",
+    "sign_up_for_consultation":"Sign Up for Consultation",
+    "ielts":"IELTS",
+    "toeic":"TOEIC",
+    "pte":"PTE",
+    "cll":"CLL",
+    "ielts_description":"IELTS course at Orca Edu helps you improve your English listening, speaking, reading and writing skills to achieve high scores in the IELTS exam. Our team of experienced instructors will guide you step by step to conquer this exam.",
+    "toeic_description":"TOEIC course at Orca Edu helps you improve your English communication skills and work in an international environment. The curriculum is designed to suit the needs of learners, from basic to advanced.",
+    "pte_description":"PTE course at Orca Edu provides you with the knowledge and skills needed to achieve a high score in the PTE exam. The curriculum includes practice exercises, exam simulations and guidance from professional instructors.",
+    "cll_description":"The CLL (Cambridge Language Learning) course at Orca Edu helps you improve your English skills through interactive and practical lessons. The curriculum is designed to suit the needs of each student, from basic to advanced.",
+    "learn_more":"Learn More",
+    "sign_up_for_free_consultation":"Sign Up for Free Consultation",
+    "full_name":"Full Name",
+    "placeholder_full_name":"Your Full Name",
+    "birth_year":"Year of Birth",
+    "placeholder_birth_year":"YOB",
+    "email":"Email",
+    "placeholder_email":"Enter your email",
+    "phone_number":"Phone Number",
+    "placeholder_phone_number":"Enter your phone number",
+    "submit":"Submit Information"   
+  },
+  "languageSelector":{
+    "lang_en":"English",
+    "lang_vi":"Vietnamese"
+  }
+}
