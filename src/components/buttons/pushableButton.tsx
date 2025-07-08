@@ -1,10 +1,10 @@
-
+import styles from './pushableButton.module.css';
 export default function PushableButton(props: { label: string }) {
     return (
-        <button className="pushable">
-            <span className="shadow"></span>
-            <span className="edge"></span>
-            <span className="front font-bold">{props.label}</span>
+        <button className={`${styles.pushable}`}>
+            <span className={`${styles.shadow}`}></span>
+            <span className={`${styles.edge}`}></span>
+            <span className={`${styles.front}`}>{props.label}</span>
         </button>
     );
 }

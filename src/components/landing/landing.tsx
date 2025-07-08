@@ -1,5 +1,7 @@
 import PushableButton from "../buttons/pushableButton";
+import OrcaCourseCard from "../card/courseCard";
 import RegisterForm from "./registerForm";
+import { COURSE_ITEMS } from "@/const";
 
 export default function OrcaLanding() {
   return (
@@ -10,16 +12,32 @@ export default function OrcaLanding() {
           <PushableButton label="Đăng ký tư vấn" />
         </div>
       </div>
+      <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {COURSE_ITEMS.map((item) => (
+            <OrcaCourseCard 
+            key={item.key} 
+            title={item.label} 
+            backgroundColor={item.backgroundColor}
+            active={!item.disabled}
+            >
+              <p className="text-white">
+                {item.description || ''}
+              </p>
+            </OrcaCourseCard>
+          ))}
+        </div>
+      </div>
       <div className="flex xl:rounded-2xl overflow-hidden border border-[rgba(135,135,135,0.25)]">
         <div className="w-1/2 pr-4 flex overflow-hidden">
           <img src="/images/Course_Poster_Landscape.png" alt="Orca Edu" className="w-full h-auto object-cover" />
         </div>
         <div className="w-1/2 pl-4 py-4 pr-8">
-          <h2 className="text-2xl text-center font-bold mb-4 text-blue-500">Đăng ký nhận tư vấn miễn phí</h2>          
+          <h2 className="text-2xl text-center font-bold mb-4 text-blue-500">Đăng ký nhận tư vấn miễn phí</h2>
           <div>
-            <RegisterForm />            
+            <RegisterForm />
           </div>
-          </div>        
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import {Header } from "antd/es/layout/layout";
 import OrcaNav from "../nav/nav";
 import Link from 'next/link'
+import { MENU_ITEMS} from "@/const";
+
 export default function OrcaHeader() {
   return (
     <Header className="!bg-white !h-24">
@@ -11,7 +13,7 @@ export default function OrcaHeader() {
             </Link>
         </div>
         <div>
-            <OrcaNav />
+            <OrcaNav items={MENU_ITEMS} />
         </div>
       </div>
     </Header>

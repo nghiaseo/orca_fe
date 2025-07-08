@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
-import { APP_TITLE } from "@/const/indext";
+import { APP_TITLE } from "@/const";
 import { Lexend } from "next/font/google";
 import { ConfigProvider} from "antd";
 const lexend = Lexend({
