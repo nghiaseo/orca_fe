@@ -4,11 +4,11 @@
   --background: #ffffff;
   --foreground: #171717;
   --nav-menu-indent: 10px;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --ai-purple: #6f42c1;
+  --pte-main-color: #0079fa;
+  --pronunciation-main-color:#6f42c1 ;
+  --ielts-main-color: #28a745;
+  --toeic-main-color: #17a2b8;
+  --cll-purple-main-color: #6c757d;
 }
 
 @theme inline {
@@ -43,5 +43,21 @@ body {
   }
   &.ant-card-hoverable{
     cursor: default !important;
+  }
+}
+.overview{
+  padding: 48px;
+  color: black !important;
+  .overview__title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 24px;    
+  }
+}
+.overview--pte {
+  background: radial-gradient(118.26% 99.16% at 47.42% 67.35%, #ffffff 0, var(--pte-main-color) 100%);
+  color: white;
+  .overview__title {
+    color: var(--pte-main-color);
   }
 }

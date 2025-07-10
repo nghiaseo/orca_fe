@@ -4,7 +4,7 @@
     "test_input":"Test Input",
     "news":"News",
     "about":"About Us",
-    "sign_up_for_consultation":"Sign Up for Consultation",
+    "register_for_consultation":"Register for consultation",
     "ielts":"IELTS",
     "toeic":"TOEIC",
     "pte":"PTE",
@@ -16,7 +16,7 @@
     "cll_description":"The CLL (Cambridge Language Learning) course at Orca Edu helps you improve your English skills through interactive and practical lessons. The curriculum is designed to suit the needs of each student, from basic to advanced.",
     "pronunciation_description":"The Pronunciation course at Orca Edu helps you improve your English pronunciation, thereby enhancing your communication skills and confidence when using English in daily life.",
     "learn_more":"Learn More",
-    "sign_up_for_free_consultation":"Sign Up for Free Consultation",
+    "register_for_free_consultation":"Register For Free Consultation",
     "full_name":"Full Name",
     "placeholder_full_name":"Your Full Name",
     "birth_year":"Year of Birth",
@@ -30,5 +30,11 @@
   "languageSelector":{
     "lang_en":"English",
     "lang_vi":"Vietnamese"
+  },
+  "pte":{
+    "title":"PTE",
+    "description_1":"Are you looking for a comprehensive and effective PTE exam preparation course?",
+    "description_2":"Welcome to Orca – where your PTE journey begins!",
+    "register_for_consultation":"Sign Up for Consultation"
   }
 }

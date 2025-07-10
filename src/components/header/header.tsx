@@ -1,10 +1,12 @@
 import {Header } from "antd/es/layout/layout";
 import OrcaNav from "../nav/nav";
 import Link from 'next/link'
-import { MENU_ITEMS} from "@/const";
 import LanguageSelector from "../languageSelector/languageSelector";
-
-export default function OrcaHeader() {
+import { MenuItem } from "@/interfaces";
+type HeaderProps = {
+  menu?:MenuItem[];
+}
+export default function OrcaHeader({menu = []}:HeaderProps) {
   return (
     <Header className="!bg-white !h-24">
       <div className="flex items-center justify-between h-full">
@@ -14,7 +16,7 @@ export default function OrcaHeader() {
             </Link>
         </div>
         <div className="flex items-center gap-16">
-            <OrcaNav items={MENU_ITEMS} />
+            <OrcaNav items={menu} />
             <div>
               <LanguageSelector />
             </div>

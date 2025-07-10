@@ -4,7 +4,7 @@
     "test_input":"Kiểm tra đầu vào",
     "news":"Tin tức",
     "about":"Về chúng tôi",
-    "sign_up_for_consultation":"Đăng ký tư vấn",
+    "register_for_consultation":"Đăng ký tư vấn",
     "ielts":"IELTS",
     "toeic":"TOEIC",
     "pte":"PTE",
@@ -16,7 +16,7 @@
     "cll_description":"Khóa học CLL (Cambridge Language Learning) tại Orca Edu giúp bạn nâng cao kỹ năng tiếng Anh thông qua các bài học tương tác và thực hành. Chương trình học được thiết kế để phù hợp với nhu cầu của từng học viên, từ cơ bản đến nâng cao.",
     "pronunciation_description":"Khóa học Pronunciation tại Orca Edu giúp bạn cải thiện phát âm tiếng Anh, từ đó nâng cao khả năng giao tiếp và tự tin hơn khi sử dụng tiếng Anh trong cuộc sống hàng ngày.",
     "learn_more":"Tìm hiểu thêm",
-    "sign_up_for_free_consultation":"Đăng ký nhận tư vấn miễn phí",
+    "register_for_free_consultation":"Đăng ký nhận tư vấn miễn phí",
     "full_name":"Họ và tên",
     "placeholder_full_name":"Họ và tên của bạn",
     "birth_year":"Năm sinh",
@@ -31,5 +31,11 @@
   "languageSelector":{
     "lang_en":"Tiếng Anh",
     "lang_vi":"Tiếng Việt"
+  },
+  "pte":{
+    "title":"PTE",
+    "description_1":"Bạn đang tìm kiếm một khóa học luyện thi PTE toàn diện và hiệu quả?",
+    "description_2":"Chào mừng bạn đến với Orca – nơi chắp cánh cho hành trình chinh phục PTE của bạn!",
+    "register_for_consultation":"Đăng ký tư vấn"
   }
 }

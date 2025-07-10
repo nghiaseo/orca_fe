@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Col, Form, Input, Row } from "antd";
+import { Button, Col, Form, Input, Row } from "antd";
 
  const customRequiredMark = (label: React.ReactNode, { required }: { required: boolean }) => (
     <>
@@ -30,10 +30,10 @@ export default function RegisterForm() {
             <Form.Item label={t('phone_number')} name="phone" rules={[{ required: true, message: 'Vui lòng nhập số điện thoại' }]}>
                 <Input type="tel" placeholder={t('placeholder_phone_number')} />
             </Form.Item>
-            <Form.Item>
-                <button type="submit" className=" cursor-pointer w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors">
+            <Form.Item className="text-center">
+                <Button type="primary" className="w-full" htmlType="submit" size="large">
                     {t('submit')}
-                </button>
+                </Button>
             </Form.Item>
         </Form>
     );

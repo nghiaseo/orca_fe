@@ -1,3 +1,5 @@
+import { MenuItem } from "@/interfaces";
+
 export const APP_TITLE = "Orca Edu";
 export const COURSE_ITEMS: MenuItem[] = [
     {
@@ -6,7 +8,8 @@ export const COURSE_ITEMS: MenuItem[] = [
         isActive: false,
         disabled: false,
         description: 'pte_description',
-        backgroundColor: '--info',
+        backgroundColor: '--pte-main-color',
+        href: '/pte',
     },
     {
         key: '1-2',
@@ -14,7 +17,8 @@ export const COURSE_ITEMS: MenuItem[] = [
         isActive: false,
         disabled: false,
         description: 'pronunciation_description',
-        backgroundColor: '--secondary',
+        backgroundColor: '--pronunciation-main-color',
+        href: '/pronunciation',
     },
     {
         key: '1-3',
@@ -22,7 +26,8 @@ export const COURSE_ITEMS: MenuItem[] = [
         isActive: false,
         disabled: true,
         description: 'ielts_description',
-        backgroundColor: '--primary',
+        backgroundColor: '--ielts-main-color',
+        href: '/ielts',
     },
     {
         key: '1-4',
@@ -30,7 +35,8 @@ export const COURSE_ITEMS: MenuItem[] = [
         isActive: false,
         disabled: true,
         description: 'toeic_description',
-        backgroundColor: '--success',
+        backgroundColor: '--toeic-main-color',
+        href: '/toeic',
     },
 
     {
@@ -39,7 +45,8 @@ export const COURSE_ITEMS: MenuItem[] = [
         isActive: false,
         disabled: true,
         description: 'cll_description',
-        backgroundColor: '--ai-purple',
+        backgroundColor: '--cll-purple-main-color',
+        href: '/cll',
     },
 ]
 export const MENU_ITEMS: MenuItem[] = [

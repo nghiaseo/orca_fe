@@ -11,7 +11,7 @@ export default function OrcaLanding() {
       <section className="relative overflow-hidden xl:rounded-2xl">
         <img src="/images/orca_landing.png" alt="Orca Edu" className="w-full h-auto" />
         <div className="absolute bottom-6 left-[calc(65%)]">
-          <PushableButton label={t('sign_up_for_consultation')} />
+          <PushableButton label={t('register_for_consultation')} />
         </div>
       </section>
       <section>
@@ -22,6 +22,7 @@ export default function OrcaLanding() {
             title={t(item.label)} 
             backgroundColor={item.backgroundColor}
             active={!item.disabled}
+            href={item.href}
             >
               <p className="text-white">
                 {item.description?t(item.description):''}
@@ -35,7 +36,7 @@ export default function OrcaLanding() {
           <img src="/images/Course_Poster_Landscape.png" alt="Orca Edu" className="w-full h-auto object-cover" />
         </div>
         <div className="w-1/2 pl-4 py-4 pr-8">
-          <h2 className="text-2xl text-center font-bold mb-4 text-blue-500">{t('sign_up_for_free_consultation')}</h2>
+          <h2 className="text-2xl text-center font-bold mb-4 text-blue-500">{t('register_for_free_consultation')}</h2>
           <div>
             <RegisterForm />
           </div>
