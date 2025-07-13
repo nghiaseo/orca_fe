@@ -74,11 +74,12 @@
     "pte_50_duration":"36 tiết học",
     "pte_79_duration":"40 tiết học",
     "pte_intensive_duration":"12 - 16 tiết học",
-    "students":"Học viên",
+    "students":"Đối tượng học viên",
     "pte_foundation_students":"Dành cho học viên mới bắt đầu làm quen với PTE",
     "pte_30_students":"Dành cho học viên có trình độ tiếng Anh cơ bản, muốn làm quen với PTE và đạt điểm 30 - 36",
     "pte_50_students":"Dành cho học viên có trình độ PTE 30 - 36",
     "pte_79_students":"Dành cho học viên có trình độ PTE 50",
-    "pte_intensive_students":"Dành cho mọi học viên muốn cải thiện kỹ năng và chiến lược kiểm tra PTE của mình"
+    "pte_intensive_students":"Dành cho mọi học viên muốn cải thiện kỹ năng và chiến lược kiểm tra PTE của mình",
+    "register_for_free_consultation":"Đăng ký nhận tư vấn miễn phí"
   }
 }

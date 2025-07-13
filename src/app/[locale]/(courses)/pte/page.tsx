@@ -53,7 +53,7 @@ export default function PtePage() {
                         <img src="/images/Course_Poster_Landscape.png" alt="PTE Edu" className="w-full h-auto object-cover" />
                     </div>
                     <div className="w-1/2 pl-4 py-4 pr-8">
-                        <h2 className="text-2xl text-center font-bold mb-4 text-blue-500">Đăng ký nhận tư vấn miễn phí</h2>
+                        <h2 className="text-2xl text-center font-bold mb-4 text-blue-500">{t("register_for_free_consultation")}</h2>
                         <div>
                             <RegisterForm />
                         </div>
