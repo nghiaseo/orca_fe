@@ -9,6 +9,11 @@
   --ielts-main-color: #28a745;
   --toeic-main-color: #17a2b8;
   --cll-purple-main-color: #6c757d;
+  --content-color: #0079fa;
+  --target-color: #dc3545;
+  --duration-color: #28a745;
+  --student-color: #ffc107;
+  --success-color: #28a745;
 }
 
 @theme inline {
@@ -59,5 +64,25 @@ body {
   color: white;
   .overview__title {
     color: var(--pte-main-color);
+  }
+}
+
+.left-caret-list{
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  li{
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5em;
+      width: 0.5em;
+      height: 0.5em;      
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
   }
 }

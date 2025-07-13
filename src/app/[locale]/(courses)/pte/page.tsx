@@ -1,5 +1,8 @@
 import PushableButton from "@/components/buttons/pushableButton";
 import { useTranslations } from "next-intl";
+import { PTE_COURSE_ITEMS } from "@/const/index";
+import OrcaCourseItemCard from "@/components/card/courseItemCard";
+import RegisterForm from "@/components/landing/registerForm";
 
 export default function PtePage() {
     const t = useTranslations('pte');
@@ -24,10 +27,25 @@ export default function PtePage() {
                     </div>
                 </div>
             </section>
-            <div className="max-w-7xl w-full mx-auto">
+            <div className="max-w-7xl w-full mx-auto flex flex-col gap-12">
                 <section>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {/* Course items will be dynamically rendered here */}
+                    <h2 className="text-2xl font-bold mb-6">{t('courses')}</h2>
+                    <div className="grid grid-cols-1 gap-6">
+                        {
+                            PTE_COURSE_ITEMS.map((item) => (
+                                <OrcaCourseItemCard
+                                    key={item.key}
+                                    title={t(item.label)}
+                                    backgroundColor={item.backgroundColor}
+                                    subTitle={item.subLabel?t(item.subLabel):''}
+                                    content={item.content}
+                                    target={item.target}
+                                    duration={item.duration}
+                                    students={item.students}
+                                />
+                            ))
+                        }
+
                     </div>
                 </section>
                 <section id="regiter-section" className="flex xl:rounded-2xl overflow-hidden border border-[rgba(135,135,135,0.25)]">
@@ -37,7 +55,7 @@ export default function PtePage() {
                     <div className="w-1/2 pl-4 py-4 pr-8">
                         <h2 className="text-2xl text-center font-bold mb-4 text-blue-500">Đăng ký nhận tư vấn miễn phí</h2>
                         <div>
-                            {/* Register form will be dynamically rendered here */}
+                            <RegisterForm />
                         </div>
                     </div>
                 </section>
